@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+html {
+  border: none;
+  margin: none;
+  background-color: #f4eeee;
+  font-family: "Poppins";
+}
+
+.app.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10% 20%;
+  justify-items: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+  .app.container {
+    padding: 10% 10%;
+  }
+}
+
+.flex.column.container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.flex.row.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  padding: 0px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.px36 {
+  font-size: 2.5rem;
+}
+
+.px24 {
+  font-size: 1.5rem;
+}
+
+.px18 {
+  font-size: 1rem;
+}
+
+.link {
+  color: #0f42f5 !important;
+}
+
+.link.icon {
+  padding-right: 45px;
+}
+
+.link.icon:hover {
+  text-decoration: none;
+}
+
+.link.icon .svg-inline--fa:hover {
+  color: #C0C0C0 !important;
+  transition: 0.1s ease-in-out;
+}
+
+.link.icon .svg-inline--fa:hover {
+  color: #959595 !important;
+  transition: 0.1s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+span.bold.px36 span {
+  margin-right: 1.5rem;
+}
+
+.svg-inline--fa {
+  color: #C0C0C0;
+  height: 30px;
+  align-self:center;
+}
+
+.heading.spacing {
+  padding-bottom: 1.5rem !important;
+}
+
+.subheading.spacing, .bodytext.spacing {
+  padding-bottom: 2rem !important;
+}
+
+.flex.row.container.no.fw.spacing {
+  justify-content: flex-start;
+  align-items: center;
+}
