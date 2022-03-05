@@ -14,7 +14,7 @@ export default function Home() {
         <FlexColumnContainer>
           <HeadingContainer>
             <Heading>
-              <span>👋</span> I'm Joshua, I Guess.
+              <span className="waving-hand">👋</span> I'm Joshua, I Guess.
             </Heading>
             {/* <HelpIcon /> */}
             {/* <Modal>
