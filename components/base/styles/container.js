@@ -1,0 +1,44 @@
+import { styled } from "@stitches/react";
+
+export const ContainerPrimitive = styled("div", {
+  "&.pad-sm": {
+    paddingBottom: "1.5rem !important",
+  },
+  "&.pad-lg": {
+    paddingBottom: "2rem !important",
+  },
+  "&.pad-no-fw": {
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
+});
+
+export const PageContainerPrimitive = styled(ContainerPrimitive, {
+  display: "flex",
+  flexDirection: "row",
+  padding: "10% 20%",
+  justifyItems: "center",
+  alignItems: "center",
+  transition: "0.1s ease-in",
+  "@media  only screen and (max-width: 600px)": {
+    padding: "10% 10%",
+  },
+});
+
+export const FlexColumnContainerPrimitive = styled(ContainerPrimitive, {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
+  padding: 0,
+  height: "100%",
+  width: "100%",
+});
+
+export const FlexRowContainerPrimitive = styled(ContainerPrimitive, {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+  alignItems: "stretch",
+  padding: 0,
+  width: "100%",
+});
