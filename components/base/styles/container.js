@@ -19,7 +19,6 @@ export const PageContainerPrimitive = styled(ContainerPrimitive, {
   padding: "10% 20%",
   justifyItems: "center",
   alignItems: "center",
-  transition: "0.1s ease-in",
   "@media  only screen and (max-width: 600px)": {
     padding: "10% 10%",
   },
