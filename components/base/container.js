@@ -3,7 +3,7 @@ import {
   ContainerPrimitive,
   FlexColumnContainerPrimitive,
   FlexRowContainerPrimitive,
-} from "./styles/container";
+} from "./primitive/container";
 
 export function FlexColumnContainer({ className, children }) {
   return (

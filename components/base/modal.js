@@ -1,8 +1,8 @@
 import React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { ButtonPrimitive } from "./styles/button";
-import { OverlayPrimitive, ContentPrimitive } from "./styles/modal";
-import { IconButtonPrimitive } from "./styles/button";
+import { ButtonPrimitive } from "./primitive/button";
+import { OverlayPrimitive, ContentPrimitive } from "./primitive/modal";
+import { IconButtonPrimitive } from "./primitive/button";
 import { Cross2Icon } from "@radix-ui/react-icons";
 
 function Content({ children, ...props }) {

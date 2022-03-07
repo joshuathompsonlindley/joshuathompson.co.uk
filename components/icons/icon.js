@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconLinkPrimitive } from "./styles/icon";
+import { IconLinkPrimitive } from "./primitive/icon";
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 
 export function IconLink({ icon, href }) {

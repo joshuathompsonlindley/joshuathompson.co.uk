@@ -1,4 +1,4 @@
-import { WavingEmojiPrimitive } from "./styles/emoji";
+import { WavingEmojiPrimitive } from "./primitive/emoji";
 
 export default function WavingEmoji({ children }) {
   return <WavingEmojiPrimitive>{children}</WavingEmojiPrimitive>;

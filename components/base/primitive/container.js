@@ -11,6 +11,12 @@ export const ContainerPrimitive = styled("div", {
     justifyContent: "flex-start",
     alignItems: "center",
   },
+  "&.pad-xs": {
+    paddingBottom: "0.5rem !important"
+  },
+  "&.not-on-last:last-of-type": {
+    paddingBottom: "0px !important"
+  }
 });
 
 export const PageContainerPrimitive = styled(ContainerPrimitive, {

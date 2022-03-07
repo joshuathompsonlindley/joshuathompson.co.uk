@@ -1,4 +1,4 @@
-import { TextPrimitive } from "./styles/typography";
+import { TextPrimitive } from "./primitive/typography";
 
 export function Heading({ children }) {
   return <TextPrimitive className="bold rem-lg">{children}</TextPrimitive>;

@@ -1,4 +1,10 @@
 import Head from "next/head";
+import { IconLink } from "../components/icons/icon";
+import MetaModal from "../components/meta";
+import ProjectsModal from "../components/projects";
+import WavingEmoji from "../components/icons/emoji";
+import { TextPrimitive } from "../components/base/primitive/typography";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   FlexColumnContainer,
   PageContainer,
@@ -13,17 +19,11 @@ import {
   BodyText,
   Link,
 } from "../components/base/typography";
-import { IconLink } from "../components/icons/icon";
-import MetaModal from "../components/meta";
-import ProjectsModal from "../components/projects";
-import WavingEmoji from "../components/icons/emoji";
-import { TextPrimitive } from "../components/base/styles/typography";
 import {
   faGithub,
   faLinkedin,
   faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
           </HeadingContainer>
           <SubheadingContainer>
             <Subheading>
-              a Product and Software Engineer from Cardiff.
+              a Product and Software Engineer from Wales.
             </Subheading>
           </SubheadingContainer>
           <BodyTextContainer>
