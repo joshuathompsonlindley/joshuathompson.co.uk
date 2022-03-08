@@ -9,7 +9,6 @@ import {
   HeadingContainer,
   SubheadingContainer,
   BodyTextContainer,
-  FlexRowContainer,
 } from "../components/base/container";
 import {
   Heading,
@@ -18,7 +17,6 @@ import {
   Link,
 } from "../components/base/typography";
 import ContactSection from "../components/contact";
-import { ContainerPrimitive } from "../components/base/primitive/container";
 
 export default function Home() {
   return (
@@ -36,7 +34,7 @@ export default function Home() {
             <MetaModal />
           </HeadingContainer>
           <SubheadingContainer>
-            <Subheading>a Product and Software Engineer from Wales.</Subheading>
+            <Subheading>a Software Engineer from Wales.</Subheading>
           </SubheadingContainer>
           <BodyTextContainer>
             <BodyText>
