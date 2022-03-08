@@ -42,7 +42,7 @@ export default function Home() {
           </HeadingContainer>
           <SubheadingContainer>
             <Subheading>
-              a Product and Software Engineer from Wales.
+              a Software Engineer from Wales.
             </Subheading>
           </SubheadingContainer>
           <BodyTextContainer>
