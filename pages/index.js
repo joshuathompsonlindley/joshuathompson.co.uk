@@ -1,17 +1,15 @@
 import Head from "next/head";
-import { IconLink } from "../components/icons/icon";
 import MetaModal from "../components/meta";
-import ProjectsModal from "../components/projects";
+import ProjectsSection from "../components/projects";
 import WavingEmoji from "../components/icons/emoji";
-import { TextPrimitive } from "../components/base/primitive/typography";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 import {
   FlexColumnContainer,
   PageContainer,
   HeadingContainer,
   SubheadingContainer,
   BodyTextContainer,
-  SocialIconsContainer,
+  FlexRowContainer,
 } from "../components/base/container";
 import {
   Heading,
@@ -19,11 +17,8 @@ import {
   BodyText,
   Link,
 } from "../components/base/typography";
-import {
-  faGithub,
-  faLinkedin,
-  faSpotify,
-} from "@fortawesome/free-brands-svg-icons";
+import ContactSection from "../components/contact";
+import { ContainerPrimitive } from "../components/base/primitive/container";
 
 export default function Home() {
   return (
@@ -41,9 +36,7 @@ export default function Home() {
             <MetaModal />
           </HeadingContainer>
           <SubheadingContainer>
-            <Subheading>
-              a Product and Software Engineer from Wales.
-            </Subheading>
+            <Subheading>a Product and Software Engineer from Wales.</Subheading>
           </SubheadingContainer>
           <BodyTextContainer>
             <BodyText>
@@ -60,32 +53,8 @@ export default function Home() {
               company I started with my friends to experiment and break things.
             </BodyText>
           </BodyTextContainer>
-          <ProjectsModal />
-          <BodyTextContainer>
-            <BodyText>
-              <TextPrimitive className="bold">
-                Want to contact me?
-              </TextPrimitive>
-            </BodyText>
-          </BodyTextContainer>
-          <SocialIconsContainer>
-            <IconLink
-              href="https://linkedin.com/in/joshuathompsonlindley"
-              icon={faLinkedin}
-            />
-            <IconLink
-              href="https://github.com/joshuathompsonlindley"
-              icon={faGithub}
-            />
-            <IconLink
-              href="https://open.spotify.com/user/nxxq0c7necw4ujd0sxt1hla5c?si=48d84c06417f4a9d"
-              icon={faSpotify}
-            />
-            <IconLink
-              href="mailto://joshua@overflow.digital"
-              icon={faEnvelope}
-            />
-          </SocialIconsContainer>
+          <ProjectsSection />
+          <ContactSection />
         </FlexColumnContainer>
       </PageContainer>
     </div>

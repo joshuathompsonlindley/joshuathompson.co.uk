@@ -38,5 +38,5 @@ export function BodyTextContainer({ children }) {
 }
 
 export function SocialIconsContainer({ children }) {
-  return <FlexRowContainer className="pad-no-fw">{children}</FlexRowContainer>;
+  return <FlexRowContainer className="centre">{children}</FlexRowContainer>;
 }

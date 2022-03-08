@@ -22,7 +22,7 @@ export const ContainerPrimitive = styled("div", {
 export const PageContainerPrimitive = styled(ContainerPrimitive, {
   display: "flex",
   flexDirection: "row",
-  padding: "10% 20%",
+  padding: "5% 25%",
   justifyItems: "center",
   alignItems: "center",
   "@media  only screen and (max-width: 600px)": {
@@ -46,4 +46,8 @@ export const FlexRowContainerPrimitive = styled(ContainerPrimitive, {
   alignItems: "stretch",
   padding: 0,
   width: "100%",
+
+  '&.centre': {
+    justifyContent: "center"
+  }
 });

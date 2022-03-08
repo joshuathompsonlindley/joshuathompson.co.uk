@@ -1,26 +1,46 @@
-import Modal from "./base/modal";
-import { BodyText, Link } from "./base/typography";
-import { BodyTextContainer } from "./base/container";
+import { HeadingContainer } from "./base/container";
 import { ProjectDescription } from "./project";
+import { ContainerPrimitive } from "./base/primitive/container";
+import { Link, Subheading } from "./base/typography";
 
-export default function ProjectsModal() {
+export default function ProjectsSection() {
   return (
-    <Modal
-      trigger={
-        <BodyTextContainer>
-          <BodyText>
-            <Link>See some things I’ve done recently</Link>
-          </BodyText>
-        </BodyTextContainer>
-      }
-      title={`Some things I’ve done recently`}
-    >
-      <div>
-        <ProjectDescription href="#" date="03/22">Started this website</ProjectDescription>
-        <ProjectDescription href="https://overflow.digital" date="02/22">Founded Overflow Digital with my friends</ProjectDescription>
-        <ProjectDescription href="https://www.cadosecurity.com/automate-incident-response-with-the-new-tines-and-cado-response-integration/" date="10/21">Published my first blog on the Cado Security blog</ProjectDescription>
-        <ProjectDescription href="https://www.cadosecurity.com/" date="07/21">Started my latest adventure at Cado Security</ProjectDescription>
-      </div>
-    </Modal>
+    <ContainerPrimitive className="pad-lg">
+      <HeadingContainer>
+        <Subheading>Some things I've done recently:</Subheading>
+      </HeadingContainer>
+      <ProjectDescription date="03/2022">
+        Started this website as a way to learn React and the JavaScript
+        ecosystem, and to start my journey to become a Full Stack Software
+        Engineer. Previously I did all of my web design with pure CSS and small
+        amounts of Vanilla JavaScript.
+      </ProjectDescription>
+      <ProjectDescription href="https://overflow.digital" date="02/2022">
+        Founded Overflow Digital with my friends{"  "}
+        <Link href="https://glewis.xyz">George Lewis</Link> and{" "}
+        <Link href="https://katerinatiddy.com">Katerina Tiddy</Link> to create
+        the software we want to freely. Currently we're planning and prototyping
+        product ideas, and enjoying the new Costco memberships.
+      </ProjectDescription>
+      <ProjectDescription
+        href="https://cadosecurity.com/automate-incident-response-with-the-new-tines-and-cado-response-integration/"
+        date="10/2021"
+      >
+        Published my first post 'Automate Incident Response with the new Tines
+        and Cado Response Integration' on the Cado Security blog. This has been
+        the first time I've written anything outside of an academic context, and
+        was probably one of the biggest challenge I've encountered
+        professionally (so far).
+      </ProjectDescription>
+      <ProjectDescription href="https://cadosecurity.com/" date="07/2021">
+        Started my latest adventure at{" "}
+        <Link href="https://cadosecurity.com">Cado Security</Link> as a Backend
+        Software Engineer. I mainly help design, implement and maintain the Cado
+        disk extraction and processing engine. I've also created platform
+        integrations with some of the top SOAR (Security Orchestration and
+        Automation) platforms. Currently, I'm learning to transition to a
+        full stack role by the end of 2022, in order to assist our growing frontend team.
+      </ProjectDescription>
+    </ContainerPrimitive>
   );
 }
