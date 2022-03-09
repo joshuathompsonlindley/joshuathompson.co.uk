@@ -49,5 +49,9 @@ export const FlexRowContainerPrimitive = styled(ContainerPrimitive, {
 
   '&.centre': {
     justifyContent: "center"
+  },
+
+  '&.no-full-width': {
+    width: "initial"
   }
 });

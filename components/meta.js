@@ -6,7 +6,10 @@ import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default function MetaModal() {
   return (
-    <Modal trigger={<IconLink icon={faQuestionCircle} />} title={<pre>&lt;meta&gt;</pre>}>
+    <Modal
+      trigger={<IconLink style="align-self: center" icon={faQuestionCircle} />}
+      title={<pre>&lt;meta&gt;</pre>}
+    >
       <BodyTextContainer>
         <BodyText>
           This website is mostly an experiment in order to learn React and get a

@@ -3,6 +3,8 @@ import { gray } from "@radix-ui/colors";
 
 export const IconLinkPrimitive = styled("span", {
   paddingRight: "45px",
+  alignSelf: "center !important",
+  justifySelf: "center !important",
 
   "&:last-of-type": {
     paddingRight: 0,
