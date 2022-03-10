@@ -1,6 +1,8 @@
-import { DefaultReactProps } from '../../lib/types'
-import { WavingEmojiPrimitive } from './primitive/emoji'
+import { DefaultReactProps } from "../../lib/types";
+import { WavingEmojiPrimitive } from "./primitive/emoji";
 
-export default function WavingEmoji ({ children }: DefaultReactProps): JSX.Element {
-  return <WavingEmojiPrimitive>{children}</WavingEmojiPrimitive>
+export default function WavingEmoji({
+  children,
+}: DefaultReactProps): JSX.Element {
+  return <WavingEmojiPrimitive>{children}</WavingEmojiPrimitive>;
 }

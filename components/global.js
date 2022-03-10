@@ -1,10 +1,10 @@
-import { globalCss } from '@stitches/react'
+import { globalCss } from "@stitches/react";
 
 export const globalStyles = globalCss({
-  '*': {
+  "*": {
     margin: 0,
-    fontFamily: 'Poppins',
+    fontFamily: "Poppins",
     border: 0,
-    padding: 0
-  }
-})
+    padding: 0,
+  },
+});

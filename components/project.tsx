@@ -1,21 +1,25 @@
-import { TextPrimitive } from './base/primitive/typography'
-import { BodyText, Link } from './base/typography'
-import { ContainerPrimitive } from './base/primitive/container'
-import { FlexRowContainer } from './base/container'
-import { SeparatorPrimitive } from './base/primitive/separator'
-import { ProjectDescriptionProps } from '../lib/types'
+import { TextPrimitive } from "./base/primitive/typography";
+import { BodyText, Link } from "./base/typography";
+import { ContainerPrimitive } from "./base/primitive/container";
+import { FlexRowContainer } from "./base/container";
+import { SeparatorPrimitive } from "./base/primitive/separator";
+import { ProjectDescriptionProps } from "../lib/types";
 
-export function ProjectDescription ({ date, children, href }: ProjectDescriptionProps): JSX.Element {
+export function ProjectDescription({
+  date,
+  children,
+  href,
+}: ProjectDescriptionProps): JSX.Element {
   return (
-    <ContainerPrimitive className='not-on-last pad-sm'>
+    <ContainerPrimitive className="not-on-last pad-sm">
       <FlexRowContainer>
-        <TextPrimitive className='bold'>{date}</TextPrimitive>
+        <TextPrimitive className="bold">{date}</TextPrimitive>
         {href && (
-          <Link href={href}>{href.split('https://')[1].split('/')[0]}</Link>
+          <Link href={href}>{href.split("https://")[1].split("/")[0]}</Link>
         )}
       </FlexRowContainer>
       <SeparatorPrimitive />
       <BodyText>{children}</BodyText>
     </ContainerPrimitive>
-  )
+  );
 }

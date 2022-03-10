@@ -13,8 +13,9 @@ export const IconButtonPrimitive = styled('button', {
   position: 'absolute',
   top: 10,
   right: 10,
-
-  '&:hover': { backgroundColor: gray.gray4 }
+  '&:hover': {
+    backgroundColor: gray.gray4
+  }
 })
 
 export const ButtonPrimitive = styled('button', {
