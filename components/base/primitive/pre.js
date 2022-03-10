@@ -1,7 +1,7 @@
-import { styled } from "@stitches/react";
+import { styled } from '@stitches/react'
 
 export const Pre = styled('pre', {
-    fontFamily: 'JetBrains Mono',
-    fontWeight: 700,
-    paddingBottom: "2rem"
-});
+  fontFamily: 'JetBrains Mono',
+  fontWeight: 700,
+  paddingBottom: '2rem'
+})

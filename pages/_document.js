@@ -1,13 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MasterDocument extends Document {
-  render() {
+  render () {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Poppins:wght@400;500;700&display=swap"
-            rel="stylesheet"
+            href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Poppins:wght@400;500;700&display=swap'
+            rel='stylesheet'
           />
         </Head>
         <body>
@@ -15,8 +15,8 @@ class MasterDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MasterDocument;
+export default MasterDocument

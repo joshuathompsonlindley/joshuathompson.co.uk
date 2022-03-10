@@ -1,20 +1,19 @@
-import React from "react";
-import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { ButtonPrimitive } from "./primitive/button";
-import { OverlayPrimitive, ContentPrimitive } from "./primitive/modal";
-import { IconButtonPrimitive } from "./primitive/button";
-import { Cross2Icon } from "@radix-ui/react-icons";
+import React from 'react'
+import * as DialogPrimitive from '@radix-ui/react-dialog'
+import { ButtonPrimitive, IconButtonPrimitive } from './primitive/button'
+import { OverlayPrimitive, ContentPrimitive } from './primitive/modal'
+import { Cross2Icon } from '@radix-ui/react-icons'
 
-function Content({ children, ...props }) {
+function Content ({ children, ...props }) {
   return (
     <DialogPrimitive.Portal>
       <OverlayPrimitive />
       <ContentPrimitive {...props}>{children}</ContentPrimitive>
     </DialogPrimitive.Portal>
-  );
+  )
 }
 
-export default function Modal({ trigger, title, children }) {
+export default function Modal ({ trigger, title, children }) {
   return (
     <DialogPrimitive.Root>
       <DialogPrimitive.Trigger asChild>
@@ -30,5 +29,5 @@ export default function Modal({ trigger, title, children }) {
         </DialogPrimitive.Close>
       </Content>
     </DialogPrimitive.Root>
-  );
+  )
 }

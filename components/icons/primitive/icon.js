@@ -1,28 +1,28 @@
-import { styled } from "@stitches/react";
-import { gray } from "@radix-ui/colors";
+import { styled } from '@stitches/react'
+import { gray } from '@radix-ui/colors'
 
-export const IconLinkPrimitive = styled("span", {
-  paddingRight: "45px",
-  alignSelf: "center !important",
-  justifySelf: "center !important",
+export const IconLinkPrimitive = styled('span', {
+  paddingRight: '45px',
+  alignSelf: 'center !important',
+  justifySelf: 'center !important',
 
-  "&:last-of-type": {
-    paddingRight: 0,
+  '&:last-of-type': {
+    paddingRight: 0
   },
 
-  "&:hover": {
-    textDecoration: "none",
+  '&:hover': {
+    textDecoration: 'none'
   },
 
-  "&a, svg": {
+  '&a, svg': {
     color: gray.gray8,
-    transition: "0.1s ease-in-out",
-    height: "30px",
-    alignSelf: "center",
+    transition: '0.1s ease-in-out',
+    height: '30px',
+    alignSelf: 'center',
 
-    "&:hover": {
+    '&:hover': {
       color: gray.gray11,
-      cursor: "pointer",
-    },
-  },
-});
+      cursor: 'pointer'
+    }
+  }
+})
