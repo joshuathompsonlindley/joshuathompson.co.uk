@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconLinkPrimitive } from './primitive/icon'
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
+import { IconLinkProps } from '../../lib/types'
 
-export function IconLink ({ icon, href }) {
+export function IconLink ({ icon, href }: IconLinkProps): JSX.Element {
   return (
     <IconLinkPrimitive>
       {href
@@ -18,6 +19,6 @@ export function IconLink ({ icon, href }) {
   )
 }
 
-export function HelpIcon () {
+export function HelpIcon (): JSX.Element {
   return <FontAwesomeIcon icon={faCircleQuestion} />
 }

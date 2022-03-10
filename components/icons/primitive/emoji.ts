@@ -12,7 +12,7 @@ const wave = keyframes({
 })
 
 export const WavingEmojiPrimitive = styled('span', {
-  animationName: wave,
+  animationName: `${wave}`,
   animationDuration: '1.5s',
   animationIterationCount: 1,
   transformOrigin: '70% 70%',

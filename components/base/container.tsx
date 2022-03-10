@@ -1,3 +1,4 @@
+import { ContainerPrimitiveProps } from '../../lib/types'
 import {
   PageContainerPrimitive,
   ContainerPrimitive,
@@ -5,7 +6,7 @@ import {
   FlexRowContainerPrimitive
 } from './primitive/container'
 
-export function FlexColumnContainer ({ className, children }) {
+export function FlexColumnContainer ({ className, children }: ContainerPrimitiveProps): JSX.Element {
   return (
     <FlexColumnContainerPrimitive className={`${className}`}>
       {children}
@@ -13,7 +14,7 @@ export function FlexColumnContainer ({ className, children }) {
   )
 }
 
-export function FlexRowContainer ({ className, children }) {
+export function FlexRowContainer ({ className, children }: ContainerPrimitiveProps): JSX.Element {
   return (
     <FlexRowContainerPrimitive className={`${className}`}>
       {children}
@@ -21,22 +22,22 @@ export function FlexRowContainer ({ className, children }) {
   )
 }
 
-export function PageContainer ({ children }) {
+export function PageContainer ({ children }: ContainerPrimitiveProps): JSX.Element {
   return <PageContainerPrimitive>{children}</PageContainerPrimitive>
 }
 
-export function HeadingContainer ({ children }) {
+export function HeadingContainer ({ children }: ContainerPrimitiveProps): JSX.Element {
   return <FlexRowContainer className='pad-sm'>{children}</FlexRowContainer>
 }
 
-export function SubheadingContainer ({ children }) {
+export function SubheadingContainer ({ children }: ContainerPrimitiveProps): JSX.Element {
   return <ContainerPrimitive className='pad-lg'>{children}</ContainerPrimitive>
 }
 
-export function BodyTextContainer ({ children }) {
+export function BodyTextContainer ({ children }: ContainerPrimitiveProps): JSX.Element {
   return <ContainerPrimitive className='pad-lg'>{children}</ContainerPrimitive>
 }
 
-export function SocialIconsContainer ({ children }) {
+export function SocialIconsContainer ({ children }: ContainerPrimitiveProps): JSX.Element {
   return <FlexRowContainer className='centre'>{children}</FlexRowContainer>
 }

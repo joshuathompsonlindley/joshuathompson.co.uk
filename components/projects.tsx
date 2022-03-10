@@ -3,7 +3,7 @@ import { ProjectDescription } from './project'
 import { ContainerPrimitive } from './base/primitive/container'
 import { Link, Subheading } from './base/typography'
 
-export default function ProjectsSection () {
+export default function ProjectsSection (): JSX.Element {
   return (
     <ContainerPrimitive className='pad-lg'>
       <HeadingContainer>

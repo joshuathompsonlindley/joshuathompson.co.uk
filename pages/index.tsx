@@ -20,7 +20,7 @@ import ContactSection from '../components/contact'
 import { globalStyles } from '../components/global'
 import { AppContainerPrimitive } from '../components/base/primitive/container'
 
-export default function Home () {
+export default function Home (): JSX.Element {
   globalStyles()
   return (
     <AppContainerPrimitive>

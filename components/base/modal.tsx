@@ -3,8 +3,9 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { ButtonPrimitive, IconButtonPrimitive } from './primitive/button'
 import { OverlayPrimitive, ContentPrimitive } from './primitive/modal'
 import { Cross2Icon } from '@radix-ui/react-icons'
+import { ModalProps } from '../../lib/types'
 
-function Content ({ children, ...props }) {
+function Content ({ children, ...props }): JSX.Element {
   return (
     <DialogPrimitive.Portal>
       <OverlayPrimitive />
@@ -13,7 +14,7 @@ function Content ({ children, ...props }) {
   )
 }
 
-export default function Modal ({ trigger, title, children }) {
+export default function Modal ({ trigger, title, children }: ModalProps): JSX.Element {
   return (
     <DialogPrimitive.Root>
       <DialogPrimitive.Trigger asChild>

@@ -5,7 +5,7 @@ import { BodyTextContainer } from './base/container'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import { Pre } from './base/primitive/pre'
 
-export default function MetaModal () {
+export default function MetaModal (): JSX.Element {
   return (
     <Modal
       trigger={<IconLink style='align-self: center' icon={faQuestionCircle} />}

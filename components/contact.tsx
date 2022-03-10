@@ -8,7 +8,7 @@ import {
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { SeparatorPrimitive } from './base/primitive/separator'
 
-export default function ContactSection () {
+export default function ContactSection (): JSX.Element {
   return (
     <div>
       <SeparatorPrimitive className='pad-lg' />

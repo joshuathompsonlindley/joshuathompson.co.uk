@@ -3,8 +3,9 @@ import { BodyText, Link } from './base/typography'
 import { ContainerPrimitive } from './base/primitive/container'
 import { FlexRowContainer } from './base/container'
 import { SeparatorPrimitive } from './base/primitive/separator'
+import { ProjectDescriptionProps } from '../lib/types'
 
-export function ProjectDescription ({ date, children, href }) {
+export function ProjectDescription ({ date, children, href }: ProjectDescriptionProps): JSX.Element {
   return (
     <ContainerPrimitive className='not-on-last pad-sm'>
       <FlexRowContainer>
