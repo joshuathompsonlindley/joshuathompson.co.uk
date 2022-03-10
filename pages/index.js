@@ -17,10 +17,13 @@ import {
   Link,
 } from "../components/base/typography";
 import ContactSection from "../components/contact";
+import { globalStyles } from "../components/global";
+import { AppContainerPrimitive } from "../components/base/primitive/container";
 
 export default function Home() {
+  globalStyles();
   return (
-    <div className="app">
+    <AppContainerPrimitive>
       <PageContainer>
         <Head>
           <title>Joshua Thompson-Lindley</title>
@@ -29,7 +32,7 @@ export default function Home() {
           <HeadingContainer>
             <Heading>
               <WavingEmoji>👋</WavingEmoji>
-              I'm Joshua, I Guess.
+              I&apos;m Joshua, I Guess.
             </Heading>
             <MetaModal />
           </HeadingContainer>
@@ -55,6 +58,6 @@ export default function Home() {
           <ContactSection />
         </FlexColumnContainer>
       </PageContainer>
-    </div>
+    </AppContainerPrimitive>
   );
 }

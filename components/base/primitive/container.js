@@ -55,3 +55,9 @@ export const FlexRowContainerPrimitive = styled(ContainerPrimitive, {
     width: "initial"
   }
 });
+
+export const AppContainerPrimitive = styled('div', {
+  backgroundColor: "#f4eeee",  
+  border: 0,
+  margin: 0
+});

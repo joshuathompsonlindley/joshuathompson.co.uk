@@ -3,12 +3,13 @@ import { IconLink } from "./icons/icon";
 import { BodyText, Link } from "./base/typography";
 import { BodyTextContainer } from "./base/container";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { Pre } from "./base/primitive/pre";
 
 export default function MetaModal() {
   return (
     <Modal
       trigger={<IconLink style="align-self: center" icon={faQuestionCircle} />}
-      title={<pre>&lt;meta&gt;</pre>}
+      title={<Pre>&lt;meta&gt;</Pre>}
     >
       <BodyTextContainer>
         <BodyText>
@@ -27,7 +28,7 @@ export default function MetaModal() {
       </BodyTextContainer>
       <BodyTextContainer>
         <BodyText>
-          It's currently deployed on{" "}
+          It&apos;s currently deployed on{" "}
           <Link href="https://vercel.com/">Vercel</Link>.
         </BodyText>
       </BodyTextContainer>
