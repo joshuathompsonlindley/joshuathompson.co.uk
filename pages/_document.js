@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { LoaderPrimitive } from "../components/base/primitive/loader";
 
 class MasterDocument extends Document {
   render() {
@@ -12,7 +11,6 @@ class MasterDocument extends Document {
           />
         </Head>
         <body>
-          <LoaderPrimitive id="loader" />
           <Main />
           <NextScript />
         </body>

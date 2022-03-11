@@ -9,6 +9,7 @@ import {
   HeadingContainer,
   SubheadingContainer,
   BodyTextContainer,
+  AppContainer,
 } from "../components/base/container";
 import {
   Heading,
@@ -18,36 +19,20 @@ import {
 } from "../components/base/typography";
 import ContactSection from "../components/contact";
 import { globalStyles } from "../components/global";
-import { AppContainerPrimitive } from "../components/base/primitive/container";
 import React from "react";
+import {
+  LoadingBarPrimitive,
+  LoadingContainer,
+} from "../components/base/primitive/loader";
 
-class Home extends React.Component {
-  state = {
-    loading: true,
-  };
-
-  componentDidMount() {
-    this.fakeLoad().then(() => {
-      const element: Element = document.getElementById("loader");
-
-      if (element) {
-        element.remove();
-
-        this.setState({
-          loading: false,
-        });
-      }
-    });
-  }
-
-  fakeLoad = () => {
-    return new Promise<void>((resolve) => setTimeout(() => resolve(), 1500));
-  };
-
-  render(): JSX.Element {
-    globalStyles();
-    return (
-      <AppContainerPrimitive>
+export function Home() {
+  globalStyles();
+  return (
+    <>
+      <LoadingContainer>
+        <LoadingBarPrimitive></LoadingBarPrimitive>
+      </LoadingContainer>
+      <AppContainer>
         <PageContainer>
           <Head>
             <title>Joshua Thompson-Lindley</title>
@@ -83,9 +68,9 @@ class Home extends React.Component {
             <ContactSection />
           </FlexColumnContainer>
         </PageContainer>
-      </AppContainerPrimitive>
-    );
-  }
+      </AppContainer>
+    </>
+  );
 }
 
 export default Home;

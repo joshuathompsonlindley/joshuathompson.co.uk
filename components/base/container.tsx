@@ -1,9 +1,11 @@
+import React from "react";
 import { ContainerPrimitiveProps } from "../../lib/types";
 import {
   PageContainerPrimitive,
   ContainerPrimitive,
   FlexColumnContainerPrimitive,
   FlexRowContainerPrimitive,
+  AppContainerPrimitive,
 } from "./primitive/container";
 
 export function FlexColumnContainer({
@@ -56,4 +58,36 @@ export function SocialIconsContainer({
   children,
 }: ContainerPrimitiveProps): JSX.Element {
   return <FlexRowContainer className="centre">{children}</FlexRowContainer>;
+}
+
+export class AppContainer extends React.Component {
+  state = {
+    loading: true,
+  };
+
+  componentDidMount() {
+    this.fakeLoad().then(() => {
+      const element: Element = document.querySelector('div.c-iqkylo');
+
+      if (element) {
+        element.remove();
+
+        this.setState({
+          loading: false,
+        });
+      }
+    });
+  }
+
+  fakeLoad = () => {
+    return new Promise<void>((resolve) => setTimeout(() => resolve(), 1000));
+  };
+
+  render(): JSX.Element {
+    if (this.state.loading) {
+      return null;
+    }
+
+    return <AppContainerPrimitive>{this.props.children}</AppContainerPrimitive>;
+  }
 }

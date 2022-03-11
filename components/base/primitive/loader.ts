@@ -10,11 +10,19 @@ const loader = keyframes({
     }
 });
 
-export const LoaderPrimitive = styled("div", {
-    border: `16px solid ${grayDark.gray10}`,
-    borderTop: `16px solid ${violetDark.violet8}`,
+export const LoadingContainer = styled('div', {
+    backgroundColor: '#f4eeee',
+    display: "grid",
+    alignContent: "center",
+    justifyContent: "center",
+    height: "100vh"
+});
+
+export const LoadingBarPrimitive = styled("span", {
+    border: `12px solid ${grayDark.gray10}`,
+    borderTop: `12px solid ${violetDark.violet8}`,
     borderRadius: "50%",
-    width: "130px",
-    height: "130px",
+    width: "100px",
+    height: "100px",
     animation: `${loader} 2s ease-in-out infinite`
 })
