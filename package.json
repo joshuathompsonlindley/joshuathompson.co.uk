@@ -7,10 +7,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.0",
-    "@fortawesome/free-brands-svg-icons": "^6.1.0",
-    "@fortawesome/free-regular-svg-icons": "^6.1.0",
-    "@fortawesome/free-solid-svg-icons": "^6.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-dialog": "^0.1.7",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "@types/react": "^17.0.42",
+    "@types/react": "^17.0.43",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "standard": "^16.0.4"
