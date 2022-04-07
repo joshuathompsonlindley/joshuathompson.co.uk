@@ -50,8 +50,7 @@ export function Home() {
             </SubheadingContainer>
             <BodyTextContainer>
               <BodyText>
-                Currently I’m a Backend Engineer (making steps to be Full Stack)
-                at <Link href="https://cadosecurity.com">Cado Security</Link>,
+                Currently I’m a Full Stack Engineer at <Link href="https://cadosecurity.com">Cado Security</Link>,
                 where I help design and maintain the core processing engine for
                 the first native cloud investigation platform.
               </BodyText>
