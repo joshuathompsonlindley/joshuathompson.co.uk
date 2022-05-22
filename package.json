@@ -14,7 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-dialog": "^0.1.7",
-    "@radix-ui/react-icons": "^1.1.0",
+    "@radix-ui/react-icons": "^1.1.1",
     "@stitches/react": "^1.2.7",
     "babel-plugin-macros": "^3.1.0",
     "next": "latest",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.22",
-    "@types/react": "^17.0.43",
+    "@types/react": "^18.0.9",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.0",
     "standard": "^16.0.4"
