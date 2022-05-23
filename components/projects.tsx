@@ -9,6 +9,9 @@ export default function ProjectsSection(): JSX.Element {
       <HeadingContainer>
         <Subheading>Some things I&apos;ve done recently:</Subheading>
       </HeadingContainer>
+      <ProjectDescription date="05/2022">
+        Overflow Digital started development of it's first project.
+      </ProjectDescription>
       <ProjectDescription date="03/2022">
         Started this website as a way to learn React and the JavaScript
         ecosystem, and to start my journey to become a Full Stack Software
